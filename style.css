@@ -1,0 +1,31 @@
+#wheelContainer {
+    position: relative;
+    width: 300px; /* Should match the canvas width */
+    margin: auto;
+  }  
+  
+  button {
+    display: block;
+    margin: 20px auto;
+  }
+  #marker {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid black; /* This will create an upwards-pointing triangle */
+    position: absolute;
+    top: 5%; /* Position it at the bottom of the wheelContainer */
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%); /* Adjust for the size of the triangle */
+    z-index: 10;
+  }
+  
+  
+  #wheel {
+    display: block; /* This is necessary to center the canvas */
+    margin: auto;
+  }
+  body {
+    background-color: #C084FC; /* The desired background color */
+  }
